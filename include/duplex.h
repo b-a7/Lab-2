@@ -14,10 +14,12 @@ class Duplex : public Shape {
     public:
         
         Duplex();
-        
+
         virtual ~Duplex();
 
-        void draw() override;  // declaration only, implementation in cpp
+        void draw() override;  
+
+        void setLocation(int x, int y);
 };
 
 

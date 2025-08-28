@@ -12,12 +12,16 @@ class House : public Shape {
         Square* body;
         Triangle* roof;
 
+        double orientation;
+
     public:
         House();
         
         virtual ~House();
 
         void draw() override;  // declaration only, implementation in cpp
+
+        void setLocation(int x, int y);
 };
 
 

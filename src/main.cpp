@@ -8,7 +8,6 @@
 #include "house.h"
 #include "duplex.h"
 
-
 Shape* createShape(int choice) {
 
     switch(choice) {
@@ -21,7 +20,6 @@ Shape* createShape(int choice) {
             std::cout << "Invalid choice... \n" << std::endl;
     }
 }
-
 
 int main()  {
 

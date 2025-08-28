@@ -14,6 +14,9 @@ class Triangle : public Shape {
         virtual ~Triangle();
 
         void draw() override;
+
+        // Additional function needed to slightly offset triangle location for house structures
+        void setLocation(int x, int y);
 };
 
 #endif // __TRIANGLE_H__

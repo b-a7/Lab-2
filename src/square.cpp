@@ -6,7 +6,10 @@ Square::Square() : orientation(0.0) {
     std::cout << "Square constructor called" << std::endl;
 }
 
-Square::~Square() {}
+Square::~Square() {
+   
+   std::cout << "Square destructor called " << std::endl;
+}
 
 void Square::draw() {
 
