@@ -1,6 +1,8 @@
 #ifndef __SHAPE_H__
 #define __SHAPE_H__
 
+// shape.h - Abstract base class for all drawable shapes
+
 #include <iostream>
 
 class Shape {

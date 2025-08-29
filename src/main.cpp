@@ -35,7 +35,6 @@ int main()  {
     std::cout << "3: house" << std::endl;
     std::cout << "4: duplex\n" << std::endl;
 
-
     for (int i = 0; i < 6; i++) {
         int choice;
         std::cin >> choice;

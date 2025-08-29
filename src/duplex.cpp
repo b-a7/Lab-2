@@ -1,9 +1,11 @@
 #include "duplex.h"
 #include "house.h"
 
+const int HOUSEWIDTH = 10;
+
 Duplex::Duplex() {
 
-    std::cout << "Duplex constructor" << std::endl;
+    std::cout << "Duplex constructor called" << std::endl;
 
     left = new House();
     right = new House();
@@ -11,10 +13,9 @@ Duplex::Duplex() {
 
 Duplex::~Duplex() {
 
+    std::cout << "Duplex destructor called " << std::endl;
     delete left;
     delete right;
-    
-    std::cout << "Duplex destructor called " << std::endl;
 }
 
 void Duplex::draw() {
@@ -26,7 +27,7 @@ void Duplex::draw() {
     left->draw();
     
     // Second house offset ot the right by 10 units to logically prevent overlap
-    right->setLocation(x_pos + 10, y_pos);
+    right->setLocation(x_pos + HOUSEWIDTH, y_pos);
     right->draw();
 }
 

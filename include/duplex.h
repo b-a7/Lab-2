@@ -1,6 +1,8 @@
 #ifndef __DUPLEX_H__
 #define __DUPLEX_H__
 
+// duplex.h - Composite shape containing two houses
+
 #include "shape.h"
 #include "house.h"
 

@@ -1,6 +1,8 @@
 #ifndef __HOUSE_H__
 #define __HOUSE_H__
 
+// house.h - Composite shape containing a square body and triangle roof
+
 #include "shape.h"
 #include "square.h"
 #include "triangle.h"
@@ -8,6 +10,7 @@
 class House : public Shape {
 
     private:
+        
         // Pointers to square (body) and triangle (roof) composition of house
         Square* body;
         Triangle* roof;
@@ -19,7 +22,7 @@ class House : public Shape {
         
         virtual ~House();
 
-        void draw() override;  // declaration only, implementation in cpp
+        void draw() override;   
 
         void setLocation(int x, int y);
 };

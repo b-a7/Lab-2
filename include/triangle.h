@@ -3,6 +3,8 @@
 
 #include "shape.h"
 
+// triangle.h - Triangle shape with orientation support  
+
 class Triangle : public Shape {
     
     protected:

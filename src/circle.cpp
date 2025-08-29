@@ -8,7 +8,6 @@ Circle::Circle() {
 Circle::~Circle() {
     
     std::cout << "Circle destructor called " << std::endl;
-
 }
 
 void Circle::draw() {

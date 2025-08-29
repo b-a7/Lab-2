@@ -1,6 +1,8 @@
 #ifndef __SQUARE_H__
 #define __SQUARE_H__
 
+// square.h - Square shape with orientation support
+
 #include "shape.h"
 
 class Square : public Shape {
